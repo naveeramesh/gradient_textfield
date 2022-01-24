@@ -27,12 +27,56 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
+  TextEditingController cmpassword = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-          child: Customtextfield(
-              height: 60, width: 400, color: Colors.grey[200], text: "Email"),
+        appBar: AppBar(
+          title: const Text("Custom Text Field Package"),
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Customtextfield(
+              controller: email,
+              radius: 40,
+              height: 60,
+              width: 400,
+              colors: const [Colors.grey, Colors.white],
+              text: "Email",
+              fontColor: Colors.black,
+              fontSize: 15,
+              fontWeight: FontWeight.normal,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Customtextfield(
+                controller: password,
+                radius: 40,
+                height: 60,
+                width: 400,
+                colors: const [Colors.pink, Colors.purple],
+                text: "Password",
+                fontColor: Colors.white,
+                fontSize: 15,
+                fontWeight: FontWeight.normal),
+            const SizedBox(
+              height: 20,
+            ),
+            Customtextfield(
+                controller: cmpassword,
+                radius: 40,
+                height: 60,
+                width: 400,
+                colors: const [Colors.green, Colors.orange],
+                text: "Confirm Password",
+                fontColor: Colors.white,
+                fontSize: 15,
+                fontWeight: FontWeight.normal),
+          ],
         ));
   }
 }

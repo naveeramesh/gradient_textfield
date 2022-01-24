@@ -5,10 +5,10 @@ class Customtextfield extends StatefulWidget {
       {Key? key,
       required this.height,
       required this.width,
-      required this.color,
+      required this.colors,
       required this.text,
       this.radius,
-      this.controller,
+     required this.controller,
       this.fontColor,
       this.fontWeight,
       this.fontSize})
@@ -16,7 +16,7 @@ class Customtextfield extends StatefulWidget {
 
   double? height;
   double? width;
-  Color? color;
+  List<Color> colors;
   String? text;
   double? radius;
   TextEditingController? controller;
@@ -29,7 +29,7 @@ class Customtextfield extends StatefulWidget {
 }
 
 class _CustomtextfieldState extends State<Customtextfield> {
-  TextEditingController email = TextEditingController();
+ 
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -38,10 +38,12 @@ class _CustomtextfieldState extends State<Customtextfield> {
         height: widget.height,
         width: widget.width,
         decoration: BoxDecoration(
-            color: widget.color,
+            gradient: LinearGradient(
+              colors: widget.colors,
+            ),
             borderRadius: BorderRadius.circular(widget.radius ?? 20.0)),
         child: TextField(
-          controller: widget.controller ?? email,
+          controller: widget.controller,
           decoration: InputDecoration(
               hintText: widget.text,
               hintStyle: TextStyle(

@@ -1,3 +1,3 @@
-## 0.0.1
+## [0.0.1] - Release
 
-* TODO: Describe initial release.
+* A customizable Custom Textfield for the developers who concentrates on UI writtern in dart.
