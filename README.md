@@ -26,12 +26,6 @@ import 'package:custom_textfield/custom_textfield.dart';
  - radius
  - font style
  ## Sample Code
- <table>
-<tr>
-
-</tr>
-<tr>
-<td>
 
 ```dart
  class Login extends StatelessWidget {
@@ -57,15 +51,10 @@ import 'package:custom_textfield/custom_textfield.dart';
   }
 }
 ```
-</td>
-<td>
-
+## Screenshot
 <img width="263" alt="package_image" src="https://user-images.githubusercontent.com/54928117/150742278-689d7c37-7273-407b-b414-d89d7364624d.png">
 
 
-</td>
-</tr>
-</table>
 
 ## Upcoming releases
 - [ ] Set prefix icons
