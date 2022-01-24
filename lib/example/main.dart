@@ -1,4 +1,4 @@
-import 'package:custom_textfield/src/customtextfield.dart';
+import 'package:custom_textfield/src/gradienttextfield.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Customtextfield(
+            Gradienttextfield(
               controller: email,
               radius: 40,
               height: 60,
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 20,
             ),
-            Customtextfield(
+            Gradienttextfield(
                 controller: password,
                 radius: 40,
                 height: 60,
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 20,
             ),
-            Customtextfield(
+            Gradienttextfield(
                 controller: cmpassword,
                 radius: 40,
                 height: 60,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Customtextfield extends StatefulWidget {
-  Customtextfield(
+class Gradienttextfield extends StatefulWidget {
+  Gradienttextfield(
       {Key? key,
       required this.height,
       required this.width,
@@ -25,10 +25,10 @@ class Customtextfield extends StatefulWidget {
   double? fontSize;
 
   @override
-  _CustomtextfieldState createState() => _CustomtextfieldState();
+  _GradienttextfieldState createState() => _GradienttextfieldState();
 }
 
-class _CustomtextfieldState extends State<Customtextfield> {
+class _GradienttextfieldState extends State<Gradienttextfield> {
  
   @override
   Widget build(BuildContext context) {
