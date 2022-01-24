@@ -1,5 +1,6 @@
-import 'package:custom_textfield/src/gradienttextfield.dart';
+
 import 'package:flutter/material.dart';
+import 'package:gradient_textfield/gradient_textfield.dart';
 
 void main() {
   runApp(const MyApp());

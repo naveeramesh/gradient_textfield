@@ -1,4 +1,4 @@
-## Custom Textfield
+## Gradient Textfield
  A customizable gradient Textfield for the developers who wants to style the Texfield of Flutter App.
  
  ## Installation
@@ -7,7 +7,7 @@
  
  ```dart
  dependencies:
-  custom_textfield: ^0.0.1
+  gradient_textfield: ^0.0.1
   ```
 2. Run the following command
  ```dart
@@ -15,7 +15,7 @@ flutter pub get
   ```
  3. Import the custom_field package and use it in your Flutter app
   ```dart
-import 'package:custom_textfield/custom_textfield.dart';
+import 'package:gradient_textfield/gradient_textfield.dart';
   ```
  ## Example
  The properties you can modify are listed below
@@ -35,7 +35,7 @@ import 'package:custom_textfield/custom_textfield.dart';
   Widget build(BuildContext context) {
     TextEditingController email = TextEditingController();
     return Scaffold(
-      body:  Customtextfield(
+      body:  Gradienttextfield(
               controller: email,
               radius: 40,
               height: 60,
